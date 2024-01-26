@@ -5,8 +5,8 @@ import sys
 import openai
 
 openai.api_key = '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'
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["ACTIVELOOP_TOKEN"] = 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwNTAyMTQ0MywiZXhwIjoxNzM2NjQzODI4fQ.eyJpZCI6ImRjbmd1eWVuMDYwODk5In0.jUIzxdEZQhsCffeVslM0o84NcVXUI_fzaZkQuYtH3sRDKqKuuNbCDSq_iBwNdR75Am8zfuYzjEM_eC5B-0DVgw'
+os.environ["OPENAI_API_KEY"] = ""
+os.environ["ACTIVELOOP_TOKEN"] = ''
 
 INPUT_IMAGE_DIR = "/content/drive/MyDrive/Data Career/Voronoi Projects/user_input"
 os.makedirs(INPUT_IMAGE_DIR, exist_ok=True)
