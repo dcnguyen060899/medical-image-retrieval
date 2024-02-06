@@ -74,23 +74,6 @@ retrieve_image_tool = FunctionTool.from_defaults(fn=retrieve_image)
 
 
 
-def clean_input_image():
-    if len(os.listdir(INPUT_IMAGE_DIR)) > 0:
-        for file in os.listdir(INPUT_IMAGE_DIR):
-            os.remove(os.path.join(INPUT_IMAGE_DIR, file))
-
-def has_user_input_image():
-    """
-Check if the INPUT_IMAGE_DIR directory contains exactly one image.
-Useful for checking if there is an image before generating an outfit.
-
-Returns:
-    bool: True if INPUT_IMAGE_DIR contains exactly one image, False otherwise.
-    """
-    return len(os.listdir(INPUT_IMAGE_DIR)) == 1
-
-
-
 llm = OpenAI(model="gpt-4", temperature=0.7)
 
 # %%
